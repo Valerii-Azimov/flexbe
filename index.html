@@ -5,88 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbe</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/normalize.css">
 </head>
 
 <body>
-    <div class="wrp">
-        <header class="header">
-            <div class="wraper">
-                <div class="main-logo--wrp">
-                    <a class="main-logo--link" href="#">
-                        Flexbe
-                    </a>
+    <header>
+        <div class="header--bg">
+            <div class="wrp">
+                <div class="main-nav__desktop--wrp">
+                    <nav class="main-nav">
+                        <div class="main-nav__logo">
+                            <a class="main-nav__logo--link" href="#">
+                                Flexbe
+                            </a>
+                        </div>
+                        <button class="main-nav--button-burger" data-action="burger-button" href="#"><img
+                                src="./img/burger.png" alt="Menu"></button>
+
+                        <ul class="main-nav__list">
+                            <li class="main-nav__list--item"><a class="main-nav__list--item-link" href="#">Сайты</a>
+                            </li>
+                            <li class="main-nav__list--item"><a class="main-nav__list--item-link" href="#">Квизы</a>
+                            </li>
+                            <li class="main-nav__list--item"><a class="main-nav__list--item-link" href="#">Тарыфы</a>
+                            </li>
+                            <li class="main-nav__list--item"><a class="main-nav__list--item-link" href="#">Академия</a>
+                            </li>
+                            <li class="main-nav__list--item"><a class="main-nav__list--item-link" href="#">Помощь</a>
+                            </li>
+                        </ul>
                 </div>
-                <nav class="main-nav">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__list--item"><a class="main-nav__list--item-link" href="#">Сайты</a></li>
-                        <li class="main-nav__list--item"><a class="main-nav__list--item-link" href="#">Квизы</a></li>
-                        <li class="main-nav__list--item"><a class="main-nav__list--item-link" href="#">Тарыфы</a></li>
-                        <li class="main-nav__list--item"><a class="main-nav__list--item-link" href="#">Академия</a>
-                        </li>
-                        <li class="main-nav__list--item"><a class="main-nav__list--item-link" href="#">Помощь</a></li>
-                    </ul>
+                <div class="main-nav__button">
+                    <button class="main-nav__button--first" type="button">Войти</button>
+                    <button class="main-nav__button--second" type="button">Создать сайт</button>
+                </div>
                 </nav>
             </div>
-            <div class="main-button">
-                <button class="main-button--item" type="button">Войти</button>
-                <button class="main-button--item" type="button">Создать сайт</button>
-            </div>
-        </header>
+            <div class="modal modal--hide" id="main-modal">
+                <div class="modal__list">
+                    <a class="modal__list--item-link" href="#">Сайты</a>
 
+                    <a class="modal__list--item-link" href="#">Квизы</a>
 
+                    <a class="modal__list--item-link" href="#">Тарыфы</a>
 
-        <main>
-            <div class="website-constructor">
-                <div class="website-constructor--info">
-                    <h1 class="website-constructor--title">Конструктор сайтов для бизнеса</h1>
-                    <h2 class="website-constructor--subtitle">Создайте сайт самостоятельно за несколько часов, даже если
-                        вы
-                        никогда не делали этого раньше</h2>
-                    <ul class="website-constructor__list">
-                        <li class="website-constructor__list--item">
-                            <svg class="website-constructor__list--svg" width=15px height=11px>
-                                <use href="img/Book.svg#book"></use>
-                            </svg>
+                    <a class="modal__list--item-link" href="#">Академия</a>
 
-                            <p class="website-constructor__list--text">Сайты</p>
-                        </li>
-                        <li class="website-constructor__list--item">
-                            <svg class="website-constructor__list--svg">
-                                <use href="img/Book.svg#book"></use>
-                            </svg>
+                    <a class="modal__list--item-link" href="#">Помощь</a>
 
-                            <p class="website-constructor__list--text">Лендинг</p>
-                        </li>
-                        <li class="website-constructor__list--item">
-                            <svg class="website-constructor__list--svg" width=15px height=11px>
-                                <use href="img/Book.svg#book"></use>
-                            </svg>
-
-                            <p class="website-constructor__list--text">Магазин</p>
-                        </li>
-                        <li class="website-constructor__list--item">
-                            <svg class="website-constructor__list--svg" width=15px height=11px>
-                                <use href="img/Book.svg#book"></use>
-                            </svg>
-
-                            <p class="website-constructor__list--text">Квизы</p>
-                        </li>
-                        <!-- <li class="website-constructor__list--item">Сайты</li> -->
-                        <!-- <li class="website-constructor__list--item">Лендинг</li>
-                    <li class="website-constructor__list--item">Магазин</li>
-                    <li class="website-constructor__list--item">Квизы</li> -->
-                    </ul>
-                    <button class="website-constructor--button" type="button">Попробовать бесплатно</button>
                 </div>
-                <div class="website-constructor--img">
-                    <!-- <img src="./img/1.jpg"> -->
+                <div class="modal__button">
+                    <button class="modal__button--first" type="button">Войти</button>
+                    <button class="modal__button--second" type="button">Создать сайт</button>
                 </div>
             </div>
-        </main>
-        <footer></footer>
-    </div>
+        </div>
+    </header>
+
+
+
+    <main>
+
+        <div class="website-constructor--bg">
+            <div class="wrp">
+                <section class="website-constructor">
+                    <div class="website-constructor--info">
+                        <h1 class="website-constructor--title">Конструктор сайтов для бизнеса</h1>
+                        <h2 class="website-constructor--subtitle">Создайте сайт самостоятельно за несколько часов, даже
+                            если
+                            вы
+                            никогда не делали этого раньше</h2>
+                        <ul class="website-constructor__list">
+                            <li class="website-constructor__list--item">
+                                <svg class="website-constructor__list--svg" width=15px height=11px>
+                                    <use href="img/Book.svg#book"></use>
+                                </svg>
+
+                                <p class="website-constructor__list--text">Сайты</p>
+                            </li>
+                            <li class="website-constructor__list--item">
+                                <svg class="website-constructor__list--svg">
+                                    <use href="img/Book.svg#book"></use>
+                                </svg>
+
+                                <p class="website-constructor__list--text">Лендинг</p>
+                            </li>
+                            <li class="website-constructor__list--item">
+                                <svg class="website-constructor__list--svg" width=15px height=11px>
+                                    <use href="img/Book.svg#book"></use>
+                                </svg>
+
+                                <p class="website-constructor__list--text">Магазин</p>
+                            </li>
+                            <li class="website-constructor__list--item">
+                                <svg class="website-constructor__list--svg" width=15px height=11px>
+                                    <use href="img/Book.svg#book"></use>
+                                </svg>
+
+                                <p class="website-constructor__list--text">Квизы</p>
+                            </li>
+
+                        </ul>
+                        <button class="website-constructor--button" type="button">Попробовать бесплатно</button>
+                    </div>
+                    <div class="website-constructor--img"></div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="./index.js" type="module"></script>
 </body>
 
 </html>
